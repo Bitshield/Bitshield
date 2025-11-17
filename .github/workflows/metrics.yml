@@ -1,8 +1,8 @@
-name: GitHub Metrics (Dark Professional)
+name: GitHub Metrics
 on:
-  schedule: [{cron: "0 */8 * * *"}]
+  schedule: [{cron: "0 */12 * * *"}]
   workflow_dispatch:
-  push: {branches: ["main", "master"]}
+  push: {branches: ["main"]}
 
 jobs:
   github-metrics:
@@ -13,37 +13,38 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          
-          # ===== Base Configuration =====
           user: Bitshield
           template: classic
-          base: header, repositories
+          base: header, activity, community, repositories
           config_timezone: Asia/Beirut
-          
-          # ===== Output Settings =====
-          filename: github-metrics.svg
+          config_animations: yes
           config_display: large
-          config_padding: 0, 8 + 11%
           
-          # ===== Theme =====
-          config_twemoji: yes
-          
-          # ===== 3D Calendar =====
+          # 3D Calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
-          # ===== Languages =====
+          # Language Stats
           plugin_languages: yes
-          plugin_languages_ignored: html, css, scss
-          plugin_languages_limit: 6
-          plugin_languages_threshold: 0%
-          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_details: percentage
+          plugin_languages_sections: most-used
           
-          # ===== Activity Stats =====
-          plugin_followup: yes
-          plugin_followup_sections: repositories
+          # Coding Habits (Time Charts)
+          plugin_habits: yes
+          plugin_habits_charts: yes
+          plugin_habits_facts: yes
+          plugin_habits_days: 14
           
-          # ===== Lines of Code =====
-          plugin_lines: yes
-          plugin_lines_history_limit: 1
-          plugin_lines_sections: base
+          # Technology Icons
+          plugin_topics: yes
+          plugin_topics_mode: icons
+          plugin_topics_limit: 20
+          
+          # Projects
+          plugin_projects: yes
+          plugin_projects_limit: 4
+          
+          # Achievements
+          plugin_achievements: yes
+          plugin_achievements_display: detailed
