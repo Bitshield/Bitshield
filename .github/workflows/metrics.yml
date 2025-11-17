@@ -1,4 +1,4 @@
-name: GitHub Metrics
+name: Metrics
 on:
   schedule: [{cron: "0 */12 * * *"}]
   workflow_dispatch:
@@ -15,42 +15,31 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Bitshield
           template: classic
-          base: header, activity, community, repositories
+          base: header, repositories
           config_timezone: Asia/Beirut
-          config_animations: yes
           config_display: large
-          config_order: base.header, isocalendar, languages, habits
+          config_animations: yes
+          config_order: base.header, isocalendar, languages, habits, topics, base.repositories
           
-          # 3D Isometric Calendar (Main Visual)
+          # 3D Isometric Calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
-          # Language Stats with Details
+          # Languages
           plugin_languages: yes
-          plugin_languages_indepth: yes
           plugin_languages_limit: 8
-          plugin_languages_details: percentage
           plugin_languages_sections: most-used
+          plugin_languages_details: percentage
           plugin_languages_colors: github
-          plugin_languages_threshold: 0%
           
-          # Coding Habits Charts (Time-based)
+          # Coding Habits
           plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
           plugin_habits_charts: yes
-          plugin_habits_charts_type: classic
-          plugin_habits_trim: yes
+          plugin_habits_facts: yes
+          plugin_habits_days: 14
+          plugin_habits_from: 200
           
           # Technology Icons
           plugin_topics: yes
           plugin_topics_mode: icons
           plugin_topics_limit: 20
-          plugin_topics_sort: stars
-          
-          # Activity Stats
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: all
