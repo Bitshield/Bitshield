@@ -1,10 +1,7 @@
-name: Metrics (Optimized)
+name: Metrics (Compact Visual)
 on:
-  # Schedule daily updates
   schedule: [{cron: "0 0 * * *"}]
-  # Allow manual workflow runs
   workflow_dispatch:
-  # Run on every push to main
   push: {branches: ["main", "master"]}
 
 jobs:
@@ -17,79 +14,46 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           
-          # ====================
-          # Base Configuration
-          # ====================
+          # Basic Config
           user: Bitshield
           template: classic
-          base: header, activity, community, repositories, metadata
-          
-          # ====================
-          # Output Configuration
-          # ====================
+          base: header, activity, community
           filename: github-metrics.svg
           config_timezone: Asia/Beirut
+          config_display: large
           
           # ====================
-          # Plugin: 3D Isometric Calendar
+          # 3D Isometric Calendar (Main Visual)
           # ====================
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
           # ====================
-          # Plugin: Languages
+          # Languages with Icons
           # ====================
           plugin_languages: yes
-          plugin_languages_analysis_timeout: 15
-          plugin_languages_categories: markup, programming
-          plugin_languages_colors: github
-          plugin_languages_limit: 8
-          plugin_languages_recent_categories: markup, programming
-          plugin_languages_recent_days: 14
-          plugin_languages_recent_load: 300
+          plugin_languages_indepth: yes
           plugin_languages_sections: most-used
-          plugin_languages_threshold: 0%
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
           
           # ====================
-          # Plugin: Notable Contributions
-          # ====================
-          plugin_notable: yes
-          plugin_notable_from: organization
-          plugin_notable_repositories: yes
-          
-          # ====================
-          # Plugin: Habits
+          # Coding Habits Charts
           # ====================
           plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
           plugin_habits_charts: yes
-          plugin_habits_trim: yes
+          plugin_habits_days: 30
+          plugin_habits_from: 400
           
           # ====================
-          # Plugin: Code Time
+          # Activity Metrics
           # ====================
-          plugin_wakatime: no
+          plugin_followup: yes
+          plugin_followup_sections: repositories, user
           
           # ====================
-          # Plugin: Achievements
+          # Achievement Badges
           # ====================
           plugin_achievements: yes
-          plugin_achievements_threshold: C
-          plugin_achievements_secrets: yes
-          plugin_achievements_display: detailed
-          plugin_achievements_limit: 10
-          
-          # ====================
-          # Disabled Plugins (for cleaner output)
-          # ====================
-          plugin_activity: no
-          plugin_topics: no
-          plugin_stars: no
-          plugin_lines: no
-          plugin_traffic: no
-          plugin_repositories: no
-          plugin_gists: no
-          plugin_projects: no
-          plugin_discussions: no
+          plugin_achievements_display: compact
+          plugin_achievements_limit: 8
