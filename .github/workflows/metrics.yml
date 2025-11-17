@@ -1,4 +1,4 @@
-name: Metrics (Compact Visual)
+name: GitHub Metrics (Visual Heavy)
 on:
   schedule: [{cron: "0 0 * * *"}]
   workflow_dispatch:
@@ -14,46 +14,31 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           
-          # Basic Config
+          # ===== Base Configuration =====
           user: Bitshield
           template: classic
-          base: header, activity, community
-          filename: github-metrics.svg
+          base: header, activity, repositories
           config_timezone: Asia/Beirut
-          config_display: large
+          filename: github-metrics.svg
           
-          # ====================
-          # 3D Isometric Calendar (Main Visual)
-          # ====================
+          # ===== 3D Contribution Calendar =====
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
-          # ====================
-          # Languages with Icons
-          # ====================
+          # ===== Language Statistics =====
           plugin_languages: yes
-          plugin_languages_indepth: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
           plugin_languages_sections: most-used
           plugin_languages_details: bytes-size, percentage
-          plugin_languages_limit: 8
           
-          # ====================
-          # Coding Habits Charts
-          # ====================
-          plugin_habits: yes
-          plugin_habits_charts: yes
-          plugin_habits_days: 30
-          plugin_habits_from: 400
+          # ===== Repository Topics =====
+          plugin_topics: yes
+          plugin_topics_mode: starred
+          plugin_topics_limit: 15
           
-          # ====================
-          # Activity Metrics
-          # ====================
-          plugin_followup: yes
-          plugin_followup_sections: repositories, user
-          
-          # ====================
-          # Achievement Badges
-          # ====================
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_limit: 8
+          # ===== Stars =====
+          plugin_stars: yes
+          plugin_stars_limit: 3
