@@ -19,27 +19,60 @@ jobs:
           config_timezone: Asia/Beirut
           config_display: large
           config_animations: yes
-          config_order: base.header, isocalendar, languages, habits, topics, base.repositories
+          config_padding: 6%, 10%
+          config_order: base.header, isocalendar, languages, topics, habits, notable, activity, base.repositories
           
-          # 3D Isometric Calendar
+          # 3D Isometric Calendar - ANIMATED
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
-          # Languages
+          # Languages - Detailed with animations
           plugin_languages: yes
-          plugin_languages_limit: 8
+          plugin_languages_indepth: yes
+          plugin_languages_limit: 12
           plugin_languages_sections: most-used
-          plugin_languages_details: percentage
-          plugin_languages_colors: github
+          plugin_languages_details: percentage, bytes-size
+          plugin_languages_colors: rainbow
+          plugin_languages_threshold: 0%
+          plugin_languages_analysis_timeout: 60
           
-          # Coding Habits
-          plugin_habits: yes
-          plugin_habits_charts: yes
-          plugin_habits_facts: yes
-          plugin_habits_days: 14
-          plugin_habits_from: 200
-          
-          # Technology Icons
+          # Technology Stack Icons - ALL YOUR TECHNOLOGIES
           plugin_topics: yes
           plugin_topics_mode: icons
-          plugin_topics_limit: 20
+          plugin_topics_limit: 30
+          plugin_topics_sort: stars
+          
+          # Coding Habits - Animated charts
+          plugin_habits: yes
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: classic
+          plugin_habits_facts: yes
+          plugin_habits_days: 30
+          plugin_habits_from: 500
+          plugin_habits_languages_limit: 12
+          plugin_habits_languages_threshold: 0%
+          
+          # Notable Contributions - Show your best work
+          plugin_notable: yes
+          plugin_notable_filter: stars:>10
+          plugin_notable_repositories: yes
+          plugin_notable_indepth: yes
+          
+          # Recent Activity - Animated
+          plugin_activity: yes
+          plugin_activity_limit: 8
+          plugin_activity_days: 30
+          plugin_activity_filter: all
+          plugin_activity_timestamps: yes
+          
+          # Lines of Code - Show productivity
+          plugin_lines: yes
+          plugin_lines_sections: repositories
+          plugin_lines_repositories_limit: 8
+          
+          # Stars and Followers
+          plugin_followup: yes
+          plugin_followup_sections: repositories
+          
+          # Traffic - If repo is public
+          plugin_traffic: yes
