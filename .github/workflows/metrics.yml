@@ -19,32 +19,38 @@ jobs:
           config_timezone: Asia/Beirut
           config_animations: yes
           config_display: large
+          config_order: base.header, isocalendar, languages, habits
           
-          # 3D Calendar
+          # 3D Isometric Calendar (Main Visual)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
-          # Language Stats
+          # Language Stats with Details
           plugin_languages: yes
+          plugin_languages_indepth: yes
           plugin_languages_limit: 8
           plugin_languages_details: percentage
           plugin_languages_sections: most-used
+          plugin_languages_colors: github
+          plugin_languages_threshold: 0%
           
-          # Coding Habits (Time Charts)
+          # Coding Habits Charts (Time-based)
           plugin_habits: yes
-          plugin_habits_charts: yes
-          plugin_habits_facts: yes
+          plugin_habits_from: 200
           plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: classic
+          plugin_habits_trim: yes
           
           # Technology Icons
           plugin_topics: yes
           plugin_topics_mode: icons
           plugin_topics_limit: 20
+          plugin_topics_sort: stars
           
-          # Projects
-          plugin_projects: yes
-          plugin_projects_limit: 4
-          
-          # Achievements
-          plugin_achievements: yes
-          plugin_achievements_display: detailed
+          # Activity Stats
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: all
