@@ -1,13 +1,7 @@
 <div align="center">
 
-<!-- New Custom Header -->
-<img src="https://capsule-render.vercel.app/api?type=venom&height=200&text=Mohamed%20El%20Rayess&fontSize=70&color=0:8871e5,50:b490f5,100:da99fb&stroke=b490f5&fontColor=ffffff&animation=fadeIn" width="100%"/>
-
-<h3>💻 Software Engineer & Architect | 🚀 Microservices Specialist | ⚡ Backend Expert</h3>
-
-<p>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=8871E5&center=true&vCenter=true&width=500&lines=Building+Scalable+Enterprise+Systems;Microservices+%7C+Event-Driven+Architecture;Database+Optimization+%7C+DevOps;Cloud+Native+%7C+Container+Orchestration" alt="Typing SVG" />
-</p>
+<!-- Custom Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=cylinder&height=200&text=Mohamed%20El%20Rayess&fontSize=60&color=gradient&customColorList=12,15,18,20&fontColor=fff&animation=blinking&desc=Software%20Engineer%20|%20Microservices%20Architect&descSize=20&descAlignY=70" width="100%"/>
 
 </div>
 
@@ -22,19 +16,19 @@
 <tr>
 <td align="center" width="50%">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Bitshield&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=8871e5&icon_color=b490f5&text_color=a3b8ef&rank_icon=github&count_private=true&include_all_commits=true" width="100%" alt="GitHub Stats"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Bitshield&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=8871e5&icon_color=b490f5&text_color=a3b8ef&rank_icon=github&count_private=true&include_all_commits=true&card_width=400" alt="GitHub Stats"/>
 
 </td>
 <td align="center" width="50%">
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=Bitshield&theme=tokyonight&hide_border=true&background=1A1B27&stroke=8871E5&ring=B490F5&fire=DA99FB&currStreakLabel=8871E5&sideLabels=B490F5&currStreakNum=DA99FB&sideNums=A3B8EF&dates=A3B8EF" width="100%" alt="GitHub Streak"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bitshield&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=8871e5&text_color=a3b8ef&langs_count=10&card_width=400" alt="Top Languages"/>
 
 </td>
 </tr>
 <tr>
 <td colspan="2" align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bitshield&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=8871e5&text_color=a3b8ef&langs_count=12" width="50%" alt="Top Languages"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Bitshield&custom_title=Contribution%20Activity%20Graph&bg_color=1a1b27&color=8871e5&line=b490f5&point=da99fb&area=true&hide_border=true&area_color=8871e5" width="90%" alt="Activity Graph"/>
 
 </td>
 </tr>
@@ -217,41 +211,24 @@
 
 ---
 
-<!-- Contribution Activity & Graph -->
+<!-- Activity Overview with New Snake Style -->
 <div align="center">
 
 ## 📈 Activity Overview
 
 <table>
 <tr>
-<td align="center" colspan="2" bgcolor="#8871e5">
-<b>🐍 Contribution Snake Animation</b>
-</td>
-</tr>
-<tr bgcolor="#1a1b27">
-<td align="center" colspan="2">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Bitshield/Bitshield/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Bitshield/Bitshield/output/github-contribution-grid-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/Bitshield/Bitshield/output/github-contribution-grid-snake-dark.svg" width="100%"/>
-</picture>
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
 <td align="center" bgcolor="#8871e5">
-<b>📊 Contribution Activity Graph</b>
+<b>🐍 GitHub Contribution Snake</b>
 </td>
 </tr>
 <tr bgcolor="#1a1b27">
 <td align="center">
+<br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Bitshield&custom_title=Activity%20Graph&bg_color=1a1b27&color=8871e5&line=b490f5&point=da99fb&area=true&hide_border=true&area_color=8871e5" width="100%" alt="Activity Graph"/>
+<img src="https://raw.githubusercontent.com/Bitshield/Bitshield/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake Animation"/>
 
+<br><br>
 </td>
 </tr>
 </table>
@@ -273,9 +250,11 @@
 </tr>
 <tr bgcolor="#1a1b27">
 <td align="center">
+<br>
 
 <img src="https://github-profile-trophy.vercel.app/?username=Bitshield&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=10&margin-h=10" width="100%" alt="Trophies"/>
 
+<br>
 </td>
 </tr>
 </table>
@@ -304,41 +283,41 @@
 <tr bgcolor="#2a2a3e">
 <td align="center" valign="top">
 <br>
-<img src="https://img.icons8.com/fluency/48/000000/approval.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/approval.png" width="40"/><br>
 <b>Microservices Design</b><br><br>
-<img src="https://img.icons8.com/fluency/48/000000/workflow.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/workflow.png" width="40"/><br>
 <b>Event-Driven Systems</b><br><br>
-<img src="https://img.icons8.com/fluency/48/000000/domain.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/domain.png" width="40"/><br>
 <b>Domain-Driven Design</b><br><br>
-<img src="https://img.icons8.com/fluency/48/000000/api-settings.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/api-settings.png" width="40"/><br>
 <b>API Gateway Patterns</b><br><br>
-<img src="https://img.icons8.com/fluency/48/000000/mesh.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/mesh.png" width="40"/><br>
 <b>Service Mesh</b><br><br>
 </td>
 <td align="center" valign="top">
 <br>
-<img src="https://img.icons8.com/fluency/48/000000/database.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/database.png" width="40"/><br>
 <b>Database Design</b><br><br>
-<img src="https://img.icons8.com/fluency/48/000000/speed.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/speed.png" width="40"/><br>
 <b>PostgreSQL Optimization</b><br><br>
-<img src="https://img.icons8.com/fluency/48/000000/data-configuration.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/data-configuration.png" width="40"/><br>
 <b>NoSQL (MongoDB, Redis)</b><br><br>
-<img src="https://img.icons8.com/fluency/48/000000/queue.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/queue.png" width="40"/><br>
 <b>Message Queues (Kafka)</b><br><br>
-<img src="https://img.icons8.com/fluency/48/000000/cache.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/cache.png" width="40"/><br>
 <b>Caching Strategies</b><br><br>
 </td>
 <td align="center" valign="top">
 <br>
-<img src="https://img.icons8.com/fluency/48/000000/docker.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/docker.png" width="40"/><br>
 <b>Docker Containers</b><br><br>
-<img src="https://img.icons8.com/fluency/48/000000/kubernetes.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/kubernetes.png" width="40"/><br>
 <b>Kubernetes Orchestration</b><br><br>
-<img src="https://img.icons8.com/fluency/48/000000/continuous-deployment.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/continuous-deployment.png" width="40"/><br>
 <b>CI/CD Pipelines</b><br><br>
-<img src="https://img.icons8.com/fluency/48/000000/infrastructure.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/infrastructure.png" width="40"/><br>
 <b>Infrastructure as Code</b><br><br>
-<img src="https://img.icons8.com/fluency/48/000000/monitor.png" width="40"/><br>
+<img src="https://img.icons8.com/fluency/48/monitor.png" width="40"/><br>
 <b>Monitoring & Logging</b><br><br>
 </td>
 </tr>
@@ -348,131 +327,87 @@
 
 ---
 
-<!-- Contact Information -->
+<!-- Contact Information - ONE ROW with all details -->
 <div align="center">
 
-## 📞 Get In Touch
+## 📞 Contact Information
 
 <table>
-<tr>
-<td align="center" bgcolor="#8871e5">
-<b>Contact Information</b>
-</td>
+<tr bgcolor="#8871e5">
+<td align="center" width="14.28%"><b>👤 Name</b></td>
+<td align="center" width="14.28%"><b>💼 Role</b></td>
+<td align="center" width="14.28%"><b>📍 Location</b></td>
+<td align="center" width="14.28%"><b>📧 Email</b></td>
+<td align="center" width="14.28%"><b>📱 Phone</b></td>
+<td align="center" width="14.28%"><b>🎯 Specialization</b></td>
+<td align="center" width="14.28%"><b>💚 Status</b></td>
 </tr>
 <tr bgcolor="#2a2a3e">
-<td align="center">
+<td align="center" valign="top">
 <br>
-
-<table border="0">
-<tr>
-<td align="center">
-<img src="https://img.icons8.com/fluency/48/000000/user.png" width="30"/><br>
-<b>Name</b>
+<img src="https://img.icons8.com/fluency/48/user-male-circle.png" width="50"/><br><br>
+<b>Mohamed<br>El Rayess</b>
+<br><br>
 </td>
-<td align="left">
-Mohamed El Rayess
-</td>
-</tr>
-<tr>
-<td align="center">
-<img src="https://img.icons8.com/fluency/48/000000/briefcase.png" width="30"/><br>
-<b>Role</b>
-</td>
-<td align="left">
-Software Engineer & Architect
-</td>
-</tr>
-<tr>
-<td align="center">
-<img src="https://img.icons8.com/fluency/48/000000/marker.png" width="30"/><br>
-<b>Location</b>
-</td>
-<td align="left">
-Lebanon 🇱🇧
-</td>
-</tr>
-<tr>
-<td align="center">
-<img src="https://img.icons8.com/fluency/48/000000/email.png" width="30"/><br>
-<b>Email</b>
-</td>
-<td align="left">
-<a href="mailto:mohamedalrayess@gmail.com">mohamedalrayess@gmail.com</a>
-</td>
-</tr>
-<tr>
-<td align="center">
-<img src="https://img.icons8.com/fluency/48/000000/phone.png" width="30"/><br>
-<b>Phone</b>
-</td>
-<td align="left">
-+961 70 076 776
-</td>
-</tr>
-<tr>
-<td align="center">
-<img src="https://img.icons8.com/fluency/48/000000/services.png" width="30"/><br>
-<b>Specialization</b>
-</td>
-<td align="left">
-Microservices Architecture<br>
-Event-Driven Design<br>
-Database Optimization<br>
-Container Orchestration
-</td>
-</tr>
-<tr>
-<td align="center">
-<img src="https://img.icons8.com/fluency/48/000000/available-updates.png" width="30"/><br>
-<b>Status</b>
-</td>
-<td align="left">
-🟢 Open to opportunities
-</td>
-</tr>
-</table>
-
+<td align="center" valign="top">
 <br>
-
+<img src="https://img.icons8.com/fluency/48/source-code.png" width="50"/><br><br>
+<b>Software<br>Engineer &<br>Architect</b>
+<br><br>
+</td>
+<td align="center" valign="top">
+<br>
+<img src="https://img.icons8.com/fluency/48/place-marker.png" width="50"/><br><br>
+<b>Lebanon<br>🇱🇧</b>
+<br><br>
+</td>
+<td align="center" valign="top">
+<br>
+<img src="https://img.icons8.com/fluency/48/new-post.png" width="50"/><br><br>
+<b><a href="mailto:mohamedalrayess@gmail.com" style="color:#8871e5">mohamed<br>alrayess<br>@gmail.com</a></b>
+<br><br>
+</td>
+<td align="center" valign="top">
+<br>
+<img src="https://img.icons8.com/fluency/48/phone-disconnected.png" width="50"/><br><br>
+<b>+961<br>70<br>076 776</b>
+<br><br>
+</td>
+<td align="center" valign="top">
+<br>
+<img src="https://img.icons8.com/fluency/48/code.png" width="50"/><br><br>
+<b>• Microservices<br>• Event-Driven<br>• Database Opt.<br>• Containers</b>
+<br><br>
+</td>
+<td align="center" valign="top">
+<br>
+<img src="https://img.icons8.com/fluency/48/checked.png" width="50"/><br><br>
+<b>🟢<br>Open for<br>Opportunities</b>
+<br><br>
 </td>
 </tr>
-</table>
-
-</div>
-
----
-
-<!-- Social Links -->
-<div align="center">
-
-## 🔗 Connect With Me
-
-<p>
+<tr bgcolor="#8871e5">
+<td colspan="7" align="center">
+<br>
 <a href="https://www.linkedin.com/in/bitshield"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://twitter.com/bitshield"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/></a>
 <a href="https://discord.gg/bitshield"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/></a>
 <a href="https://www.youtube.com/@bitshield"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a>
 <a href="mailto:mohamedalrayess@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-</p>
+<br><br>
+</td>
+</tr>
+</table>
 
 </div>
 
 ---
 
-<!-- Profile Views -->
+<!-- Profile Metrics -->
 <div align="center">
 
 <img src="https://komarev.com/ghpvc/?username=Bitshield&style=for-the-badge&color=8871e5" alt="Profile Views"/>
-<img src="https://img.shields.io/github/followers/Bitshield?style=for-the-badge&color=b490f5" alt="Followers"/>
-<img src="https://img.shields.io/github/stars/Bitshield?style=for-the-badge&color=da99fb" alt="Stars"/>
-
-</div>
-
----
-
-<div align="center">
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&color=gradient&customColorList=12,15,20&section=footer"/>
+<img src="https://img.shields.io/github/followers/Bitshield?style=for-the-badge&color=b490f5&label=Followers" alt="Followers"/>
 
 **✨ Building scalable systems, one microservice at a time ✨**
 
