@@ -1,8 +1,11 @@
 name: Metrics
 on:
-  schedule: [{cron: "0 */12 * * *"}]
+  schedule: 
+    - cron: "0 */12 * * *"
   workflow_dispatch:
-  push: {branches: ["main"]}
+  push: 
+    branches: ["main"]
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -14,38 +17,157 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Bitshield
           
+          # Template & Base
           template: classic
-          base: header, activity, community, repositories
+          base: header, activity, community, repositories, metadata
           
+          # Configuration
           config_timezone: Asia/Beirut
           config_animations: yes
           config_display: large
           config_padding: 6%, 12%
+          config_output: svg
+          config_twemoji: yes
           
-          # Animated Contribution Snake
+          # ==========================================
+          # LANGUAGES PLUGIN (Rainbow Style)
+          # ==========================================
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_colors: rainbow
+          plugin_languages_limit: 12
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_details: bytes-size, percentage, lines
+          plugin_languages_threshold: 0%
+          plugin_languages_analysis_timeout: 60
+          
+          # ==========================================
+          # HABITS & ACTIVITY CHARTS
+          # ==========================================
           plugin_habits: yes
           plugin_habits_charts: yes
           plugin_habits_charts_type: graph
           plugin_habits_facts: yes
           plugin_habits_from: 1000
           plugin_habits_days: 90
+          plugin_habits_trim: yes
           
-          # Rainbow Languages
-          plugin_languages: yes
-          plugin_languages_indepth: yes
-          plugin_languages_colors: rainbow
-          plugin_languages_limit: 12
-          plugin_languages_sections: most-used, recently-used
+          # ==========================================
+          # ISOCALENDAR (Contribution Graph)
+          # ==========================================
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
           
-          # Skyline 3D
-          plugin_skyline: yes
-          plugin_skyline_year: current-year
-          plugin_skyline_frames: 60
-          plugin_skyline_quality: 0.5
-          plugin_skyline_compatibility: yes
+          # ==========================================
+          # LINES OF CODE
+          # ==========================================
+          plugin_lines: yes
+          plugin_lines_history_limit: 1
+          plugin_lines_repositories_limit: 4
+          plugin_lines_sections: base
           
-          # Reactions
+          # ==========================================
+          # NOTABLE CONTRIBUTIONS
+          # ==========================================
+          plugin_notable: yes
+          plugin_notable_from: all
+          plugin_notable_types: commit
+          plugin_notable_repositories: yes
+          
+          # ==========================================
+          # ACHIEVEMENTS
+          # ==========================================
+          plugin_achievements: yes
+          plugin_achievements_display: detailed
+          plugin_achievements_secrets: yes
+          plugin_achievements_threshold: C
+          
+          # ==========================================
+          # ACTIVITY
+          # ==========================================
+          plugin_activity: yes
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_limit: 5
+          plugin_activity_load: 300
+          plugin_activity_visibility: all
+          
+          # ==========================================
+          # CODE SNIPPET OF THE DAY
+          # ==========================================
+          plugin_code: yes
+          plugin_code_languages: javascript, typescript, python
+          plugin_code_load: 400
+          plugin_code_days: 3
+          plugin_code_lines: 12
+          
+          # ==========================================
+          # FOLLOW-UP OF ISSUES AND PRs
+          # ==========================================
+          plugin_followup: yes
+          plugin_followup_sections: repositories
+          plugin_followup_indepth: yes
+          
+          # ==========================================
+          # GISTS
+          # ==========================================
+          plugin_gists: yes
+          
+          # ==========================================
+          # INTRODUCTION
+          # ==========================================
+          plugin_introduction: yes
+          plugin_introduction_title: yes
+          
+          # ==========================================
+          # PEOPLE (Contributors, Sponsors, etc.)
+          # ==========================================
+          plugin_people: yes
+          plugin_people_limit: 24
+          plugin_people_size: 28
+          plugin_people_types: followers, following
+          plugin_people_identicons: no
+          plugin_people_shuffle: yes
+          
+          # ==========================================
+          # REACTIONS
+          # ==========================================
           plugin_reactions: yes
           plugin_reactions_limit: 200
           plugin_reactions_days: 14
           plugin_reactions_display: absolute
+          
+          # ==========================================
+          # STARGAZERS GRAPH
+          # ==========================================
+          plugin_stargazers: yes
+          plugin_stargazers_charts: yes
+          plugin_stargazers_charts_type: graph
+          
+          # ==========================================
+          # STARS
+          # ==========================================
+          plugin_stars: yes
+          plugin_stars_limit: 4
+          
+          # ==========================================
+          # TOPICS
+          # ==========================================
+          plugin_topics: yes
+          plugin_topics_limit: 15
+          plugin_topics_mode: starred
+          plugin_topics_sort: stars
+          
+          # ==========================================
+          # TRAFFIC
+          # ==========================================
+          plugin_traffic: yes
+          
+          # ==========================================
+          # WAKATIME (Optional - if you use WakaTime)
+          # ==========================================
+          # plugin_wakatime: yes
+          # plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+          # plugin_wakatime_days: 7
+          # plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
+          # plugin_wakatime_limit: 5
