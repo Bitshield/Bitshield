@@ -14,95 +14,38 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Bitshield
           
-          # TEMPLATE - This is the key change!
-          template: terminal
-          base: header, activity, community, repositories, metadata
+          template: classic
+          base: header, activity, community, repositories
           
-          # Theme Configuration
           config_timezone: Asia/Beirut
-          config_display: large
           config_animations: yes
-          config_padding: 0, 8 + 11%
-          config_order: base.header, isocalendar, languages, topics, notable, habits, activity, base.repositories
+          config_display: large
+          config_padding: 6%, 12%
           
-          # Dark theme colors
-          config_output: svg
-          config_twemoji: yes
-          
-          # 3D Isometric Calendar - ANIMATED (matches your image)
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          
-          # PageSpeed Plugin (for the performance scores shown)
-          plugin_pagespeed: yes
-          plugin_pagespeed_detailed: yes
-          plugin_pagespeed_url: https://simon.lecoq.io
-          plugin_pagespeed_screenshot: no
-          
-          # Music Plugin (for "Suggested tracks" section)
-          plugin_music: yes
-          plugin_music_provider: apple
-          plugin_music_mode: recent
-          plugin_music_limit: 2
-          plugin_music_time_range: short
-          plugin_music_top_type: tracks
-          
-          # Languages - Detailed with animations
-          plugin_languages: yes
-          plugin_languages_indepth: yes
-          plugin_languages_limit: 8
-          plugin_languages_sections: most-used
-          plugin_languages_details: percentage
-          plugin_languages_colors: github
-          plugin_languages_threshold: 0%
-          plugin_languages_analysis_timeout: 60
-          
-          # Technology Stack Icons
-          plugin_topics: yes
-          plugin_topics_mode: icons
-          plugin_topics_limit: 0
-          plugin_topics_sort: stars
-          
-          # Coding Habits - Animated charts (the commit activity graphs)
+          # Animated Contribution Snake
           plugin_habits: yes
           plugin_habits_charts: yes
-          plugin_habits_charts_type: classic
+          plugin_habits_charts_type: graph
           plugin_habits_facts: yes
-          plugin_habits_days: 14
-          plugin_habits_from: 200
-          plugin_habits_languages_limit: 8
-          plugin_habits_languages_threshold: 0%
+          plugin_habits_from: 1000
+          plugin_habits_days: 90
           
-          # Notable Contributions
-          plugin_notable: yes
-          plugin_notable_filter: stars:>50
-          plugin_notable_repositories: yes
-          plugin_notable_indepth: yes
-          plugin_notable_types: commit
+          # Rainbow Languages
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_colors: rainbow
+          plugin_languages_limit: 12
+          plugin_languages_sections: most-used, recently-used
           
-          # Recent Activity
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          plugin_activity_timestamps: yes
-          plugin_activity_visibility: all
+          # Skyline 3D
+          plugin_skyline: yes
+          plugin_skyline_year: current-year
+          plugin_skyline_frames: 60
+          plugin_skyline_quality: 0.5
+          plugin_skyline_compatibility: yes
           
-          # Lines of Code
-          plugin_lines: yes
-          plugin_lines_sections: base
-          plugin_lines_repositories_limit: 4
-          plugin_lines_history_limit: 1
-          
-          # Projects (for the project tracker shown)
-          plugin_projects: yes
-          plugin_projects_limit: 4
-          plugin_projects_repositories: lowlighter/metrics
-          
-          # People plugin (for followers/following)
-          plugin_people: yes
-          plugin_people_limit: 24
-          plugin_people_size: 28
-          plugin_people_types: followers, following
-          plugin_people_identicons: no
-          plugin_people_shuffle: yes
+          # Reactions
+          plugin_reactions: yes
+          plugin_reactions_limit: 200
+          plugin_reactions_days: 14
+          plugin_reactions_display: absolute
