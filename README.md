@@ -43,6 +43,17 @@
 
 ---
 
+<!-- 3D Contribution Profile -->
+<div align="center">
+
+## 📈 3D Contribution Profile
+
+<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Profile"/>
+
+</div>
+
+---
+
 <!-- Technology Arsenal -->
 <div align="center">
 
@@ -216,10 +227,10 @@
 
 ---
 
-<!-- Activity Overview - New Style Without Snake -->
+<!-- Activity Overview -->
 <div align="center">
 
-## 📈 Contribution Activity
+## 📊 Activity Overview
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Bitshield&custom_title=GitHub%20Contribution%20Graph&bg_color=0d1117&color=8b5cf6&line=6366f1&point=a5b4fc&area=true&hide_border=true&area_color=4f46e5" width="95%" alt="Activity Graph"/>
 
@@ -271,7 +282,7 @@
 
 ---
 
-<!-- Contact Information - Vertical One Column -->
+<!-- Contact Information -->
 <div align="center">
 
 ## 📞 Contact Information
