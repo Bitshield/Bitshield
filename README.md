@@ -36,7 +36,7 @@
 <table style="border-radius: 10px; overflow: hidden;">
 <tr>
 <td align="center" bgcolor="#1f2937" style="border-radius: 10px; padding: 20px;">
-<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Profile"/>
+<img src="./profile-3d-contrib/profile-night-green.svg" width="100%" alt="3D Contribution Profile"/>
 </td>
 </tr>
 </table>
