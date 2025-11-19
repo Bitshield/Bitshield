@@ -21,8 +21,8 @@
 
 ## 📊 GitHub Statistics
 
-<img src="https://github-readme-stats.vercel.app/api?username=Bitshield&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=fbbf24&icon_color=f59e0b&text_color=d1d5db&rank_icon=github&count_private=true&include_all_commits=true" width="49%" alt="GitHub Stats"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bitshield&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=fbbf24&text_color=d1d5db&langs_count=10" width="49%" alt="Top Languages"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Bitshield&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=fbbf24&icon_color=f59e0b&text_color=d1d5db&rank_icon=github&count_private=true&include_all_commits=true&hide=contribs" width="49%" alt="GitHub Stats"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bitshield&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=fbbf24&text_color=d1d5db&langs_count=8&card_width=300" width="49%" alt="Top Languages"/>
 
 </div>
 
