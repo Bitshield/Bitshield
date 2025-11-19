@@ -1,4 +1,4 @@
-name: Generate Snake Animation
+name: Generate Profile Assets
 
 on:
   schedule:
@@ -12,7 +12,8 @@ permissions:
   contents: write
 
 jobs:
-  generate:
+  # Job 1: Generate Snake Animation
+  generate-snake:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -33,10 +34,36 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy Snake to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Job 2: Generate 3D Profile Contribution
+  generate-3d-profile:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    name: generate-github-profile-3d-contrib
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v5
+
+      - name: Generate 3D Contribution Profile
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Commit & Push 3D Profile
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          if git commit -m "generated 3d profile"; then
+            git push
+          fi
